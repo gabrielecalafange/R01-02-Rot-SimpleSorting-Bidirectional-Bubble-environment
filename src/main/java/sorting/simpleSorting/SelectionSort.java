@@ -2,8 +2,6 @@ package sorting.simpleSorting;
 import util.Util;
 import sorting.AbstractSorting;
 
-import java.util.Arrays;
-
 /**
  * The selection sort algorithm chooses the smallest element from the array and
  * puts it in the first position. Then chooses the second smallest element and
