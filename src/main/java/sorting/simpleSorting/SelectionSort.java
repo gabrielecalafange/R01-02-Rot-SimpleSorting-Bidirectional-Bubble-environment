@@ -2,6 +2,8 @@ package sorting.simpleSorting;
 import util.Util;
 import sorting.AbstractSorting;
 
+import java.util.Arrays;
+
 /**
  * The selection sort algorithm chooses the smallest element from the array and
  * puts it in the first position. Then chooses the second smallest element and
@@ -11,15 +13,13 @@ public class SelectionSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-		int j = leftIndex;
-		while (leftIndex < rightIndex) {
-			for (int i = j; i < array.length; i++) {
-				int comparador = array[j].compareTo(array[i]);  // >0 menor, <0, maior, =0 iguais
-				if (comparador > 0) {
-					Util.swap(array, i, j);
+		for (int i = leftIndex; i <= rightIndex; i ++) {
+			int indiceMenor = i;
+			for (int j = i+1; j <= rightIndex; j++) {
+				if (array[j].compareTo(array[indiceMenor]) < 0) {
+					indiceMenor = j;
 				}
-			}
-			j++;
+			} Util.swap(array, i, indiceMenor);
 		}
 	}
 }
