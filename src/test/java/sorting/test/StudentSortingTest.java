@@ -9,6 +9,7 @@ import org.junit.Test;
 import sorting.AbstractSorting;
 import sorting.simpleSorting.InsertionSort;
 import sorting.simpleSorting.SelectionSort;
+import sorting.variationsOfSelectionsort.RecursiveSelectionSort;
 
 public class StudentSortingTest {
 
@@ -38,7 +39,7 @@ public class StudentSortingTest {
 	 * do aluno
 	 */
 	private void getImplementation() {
-		this.implementation = new InsertionSort<Integer>();
+		this.implementation = new RecursiveSelectionSort<Integer>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {
