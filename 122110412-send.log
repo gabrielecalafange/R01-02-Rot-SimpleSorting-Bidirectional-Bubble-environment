@@ -47,3 +47,43 @@
   <level>FINE</level>
   <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 192.168.0.111 at 15-08-2023 18*06*25</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-16T08:47:05.358-0300</date>
+  <logger>GABRIELE MEDEIROS CALAFANGE</logger>
+  <level>FINE</level>
+  <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 150.165.42.218 at 16-08-2023 08*47*05</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-17T08:27:48.542-0300</date>
+  <logger>GABRIELE MEDEIROS CALAFANGE</logger>
+  <level>FINE</level>
+  <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 192.168.0.111 at 17-08-2023 08*27*48</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-17T08:39:13.456-0300</date>
+  <logger>GABRIELE MEDEIROS CALAFANGE</logger>
+  <level>FINE</level>
+  <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 192.168.0.111 at 17-08-2023 08*39*13</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-17T09:23:45.572-0300</date>
+  <logger>GABRIELE MEDEIROS CALAFANGE</logger>
+  <level>FINE</level>
+  <message>File 122110412-GABRIELE MEDEIROS CALAFANGE.zip was received. It was sent by GABRIELE MEDEIROS CALAFANGE from IP 192.168.0.111 at 17-08-2023 09*23*45</message>
+</record>
