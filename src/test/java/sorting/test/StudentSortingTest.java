@@ -10,6 +10,7 @@ import sorting.AbstractSorting;
 import sorting.simpleSorting.BubbleSort;
 import sorting.simpleSorting.InsertionSort;
 import sorting.simpleSorting.SelectionSort;
+import sorting.variationsOfBubblesort.BidirectionalBubbleSort;
 import sorting.variationsOfBubblesort.RecursiveBubbleSort;
 import sorting.variationsOfSelectionsort.RecursiveSelectionSort;
 
@@ -25,8 +26,8 @@ public class StudentSortingTest {
 	public AbstractSorting<Integer> implementationInsertionSort;
 	public AbstractSorting<Integer> implementationBubbleSort;
 	public AbstractSorting<Integer> implementationSelectionSort_recursive;
-
 	public AbstractSorting<Integer> implementationBubbleSort_recursive;
+	public AbstractSorting<Integer> implementationBubbleSort_bidirectional;
 
 
 
@@ -53,6 +54,7 @@ public class StudentSortingTest {
 		this.implementationBubbleSort = new BubbleSort<Integer>();
 		this.implementationSelectionSort_recursive = new RecursiveSelectionSort<Integer>();
 		this.implementationBubbleSort_recursive = new RecursiveBubbleSort<Integer>();
+		this.implementationBubbleSort_bidirectional = new BidirectionalBubbleSort<Integer>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {
@@ -163,36 +165,49 @@ public class StudentSortingTest {
 		Assert.assertArrayEquals(copy1, array);
 	}
 
+	public void genericTest_bidirectional(Integer[] array) { // testa o SelectionSort Recursivo
+		Integer[] copy1 = {};
+		if(array.length > 0){
+			copy1 = Arrays.copyOf(array, array.length);
+		}
+		implementationBubbleSort_bidirectional.sort(array);
+		Arrays.sort(copy1);
+		Assert.assertArrayEquals(copy1, array);
+	}
+
 	@Test
 	public void testSort01_recursive() {
 		genericTest_recursive(vetorTamPar);
 		genericTest_recursive2(vetorTamPar);
+		genericTest_bidirectional(vetorTamPar);
 	}
 
 	@Test
 	public void testSort02_recursive() {
 		genericTest_recursive(vetorTamImpar);
 		genericTest_recursive2(vetorTamImpar);
+		genericTest_bidirectional(vetorTamImpar);
 	}
 
 	@Test
 	public void testSort03_recursive() {
 		genericTest_recursive(vetorVazio);
 		genericTest_recursive2(vetorVazio);
-
+		genericTest_bidirectional(vetorVazio);
 	}
 
 	@Test
 	public void testSort04_recursive() {
 		genericTest_recursive(vetorValoresIguais);
 		genericTest_recursive2(vetorValoresIguais);
-
+		genericTest_bidirectional(vetorValoresIguais);
 	}
 
 	@Test
 	public void testSort05_recursive() {
 		genericTest_recursive(vetorValoresRepetidos);
 		genericTest_recursive2(vetorValoresRepetidos);
+		genericTest_bidirectional(vetorValoresRepetidos);
 	}
 
 }
